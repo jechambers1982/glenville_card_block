@@ -1,0 +1,4 @@
+card:
+  css:
+    theme:
+      css/card_block.css: {}
