@@ -1,0 +1,56 @@
+uuid: b2b4d33b-1ad7-40a5-a82a-a0e08014bc99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.glen_grid_card_item.field_card_image
+    - field.field.paragraph.glen_grid_card_item.field_card_text
+    - field.field.paragraph.glen_grid_card_item.field_link
+    - field.field.paragraph.glen_grid_card_item.field_title
+    - paragraphs.paragraphs_type.glen_grid_card_item
+  module:
+    - link
+    - media_library
+    - text
+  enforced:
+    module:
+      - glenville_card_block
+id: paragraph.glen_grid_card_item.default
+targetEntityType: paragraph
+bundle: glen_grid_card_item
+mode: default
+content:
+  field_card_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_card_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

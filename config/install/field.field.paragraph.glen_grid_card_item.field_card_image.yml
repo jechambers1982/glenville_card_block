@@ -1,0 +1,38 @@
+uuid: c4f66846-adcd-45ea-b6ad-7dd8102a51c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_image
+    - media.type.image
+    - paragraphs.paragraphs_type.glen_grid_card_item
+  module:
+    - unique_field_ajax
+  enforced:
+    module:
+      - glenville_card_block
+third_party_settings:
+  unique_field_ajax:
+    message: "Field '%label' <strong>must</strong> be unique.\r\nThe value '%value' can also be found on %link."
+    message_warning: "Field '%label' <em>should</em> be unique.\r\nThe value '%value' can also be found on %link."
+id: paragraph.glen_grid_card_item.field_card_image
+field_name: field_card_image
+entity_type: paragraph
+bundle: glen_grid_card_item
+label: 'Card Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

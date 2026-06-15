@@ -1,0 +1,18 @@
+uuid: 0f5a15dd-8990-4124-8eac-4a650d356c33
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+  enforced:
+    module:
+      - glenville_card_block
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories: {  }
+id: glen_card_block
+label: 'Glenville Card Block'
+icon_uuid: null
+icon_default: null
+description: 'Parent Item for individual card blocks.'
+behavior_plugins: {  }

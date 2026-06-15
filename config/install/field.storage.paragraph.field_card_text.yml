@@ -1,0 +1,22 @@
+uuid: 91217d37-3bd1-474a-8d43-3541c30a7632
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+  enforced:
+    module:
+      - glenville_card_block
+id: paragraph.field_card_text
+field_name: field_card_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 6c3d5ac3-ee49-400d-b139-57049a99fa20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_text
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.glen_grid_card_item
+  module:
+    - text
+  enforced:
+    module:
+      - glenville_card_block
+id: paragraph.glen_grid_card_item.field_card_text
+field_name: field_card_text
+entity_type: paragraph
+bundle: glen_grid_card_item
+label: 'Card Text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text_long

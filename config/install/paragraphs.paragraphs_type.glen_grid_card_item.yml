@@ -1,0 +1,18 @@
+uuid: 37e9211c-b200-4465-a823-510bec0ce96a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+  enforced:
+    module:
+      - glenville_card_block
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories: {  }
+id: glen_grid_card_item
+label: 'Grid Card Item'
+icon_uuid: null
+icon_default: null
+description: 'Individual Grid Card Item for the Parent Glenville Card Block.'
+behavior_plugins: {  }
